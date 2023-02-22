@@ -3,8 +3,13 @@ public class GlobalMembersCallBack1 {
         CdPlayer cdPlayer = new CdPlayer();
         Button playButton = new Button(cdPlayer);
         Button stopButton = new Button(cdPlayer);
+
+
         cdPlayer.setPlayButton(playButton);
         cdPlayer.setStopButton(stopButton);
+        
+        
+        // interception point
         playButton.push();
         stopButton.push();
     }
