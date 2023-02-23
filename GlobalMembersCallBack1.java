@@ -4,12 +4,9 @@ public class GlobalMembersCallBack1 {
         Button playButton = new Button(cdPlayer);
         Button stopButton = new Button(cdPlayer);
 
-
         cdPlayer.setPlayButton(playButton);
         cdPlayer.setStopButton(stopButton);
         
-        
-        // interception point
         playButton.push();
         stopButton.push();
     }

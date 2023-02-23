@@ -1,11 +1,7 @@
 public class Dispatcher {
-
-	public void dispatch(CdPlayer cdPlayer) {
-        // TODO Auto-generated method stub
-	}
-
     public void dispatchStopButton(CdPlayer cdPlayer) {
         cdPlayer.setButtonPushed("stop button pushed");
+        Interceptor.update(this);
     }
 
     public void dispatchPlayButton(CdPlayer cdPlayer) {
@@ -13,6 +9,5 @@ public class Dispatcher {
     }
     // calls back to the concrete interceptor
     // attach detatch notify call back
-
-    //add remove dispatcher context object 
+    // add remove dispatcher context object 
 }

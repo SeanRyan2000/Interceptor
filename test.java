@@ -1,6 +1,5 @@
 // create junit tests for the following methods
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import org.junit.jupiter.api.Test;
 
 public class test {
     @Test

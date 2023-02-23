@@ -3,6 +3,7 @@ public class CdPlayer implements IPushCallBack {
     private Button stopButton;
     private String buttonPushed = "";
     Dispatcher dispatcher = new Dispatcher();
+    ConcreteInterceptor interceptor = new ConcreteInterceptor();
 
     public String getButtonPushed() {
         return buttonPushed;
@@ -17,7 +18,6 @@ public class CdPlayer implements IPushCallBack {
         if(b == stopButton) this.stopButtonPushed(b);
     }
 
-
     public final void setPlayButton(Button b){
         playButton = b;
     }
@@ -27,11 +27,12 @@ public class CdPlayer implements IPushCallBack {
 
     // interception point
     public final void playButtonPushed(Button b){
+        // invoke interceptor
+        interceptor.logTime(this);
+
         dispatcher.dispatchPlayButton(this);
         System.out.println(buttonPushed);
     }
-
-    //new method to call the dispatcher 
 
     // interception point
     public final void stopButtonPushed(Button b){

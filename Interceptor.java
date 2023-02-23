@@ -1,4 +1,4 @@
 public interface Interceptor {
-    public void onPreMarshalRequest (UnmarshaledRequest context);
-    public void onPostMarshaledRequest (MarshaledRequest context);
+	public static void update(Dispatcher dispatcher) {
+	}
 }
