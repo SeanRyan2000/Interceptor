@@ -1,13 +1,23 @@
 public class Dispatcher {
-    public void dispatchStopButton(CdPlayer cdPlayer) {
-        cdPlayer.setButtonPushed("stop button pushed");
-        Interceptor.update(this);
+
+    public void dispatchPlay(CdPlayer cdPlayer){
+        Interceptor.CdPlay(cdPlayer);
+
     }
 
-    public void dispatchPlayButton(CdPlayer cdPlayer) {
-        cdPlayer.setButtonPushed("play button pushed");
+    public void dispatchStop(CdPlayer cdPlayer){
+        Interceptor.CdStop(cdPlayer);
     }
-    // calls back to the concrete interceptor
-    // attach detatch notify call back
-    // add remove dispatcher context object 
+
+    public void register(){
+
+    }
+
+    public void remove(){
+
+    }
+
+    public void iterate_list(){
+
+    }
 }

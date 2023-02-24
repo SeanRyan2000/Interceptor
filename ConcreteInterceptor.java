@@ -7,4 +7,10 @@ public class ConcreteInterceptor implements Interceptor{
         System.out.println("Time: " + new Date());
         // invoke the dispatcher
     }
+
+    public class PlayButton(){
+
+    }
+
+    // this can only call the context object 
 }
