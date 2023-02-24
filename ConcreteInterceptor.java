@@ -1,16 +1,16 @@
 import java.util.Date;
 
 public class ConcreteInterceptor implements Interceptor{
-// this may change data
-    public void logTime(CdPlayer cdPlayer) {
-        //print the time and date in days and hours
-        System.out.println("Time: " + new Date());
-        // invoke the dispatcher
-    }
-
-    public class PlayButton(){
-
-    }
 
     // this can only call the context object 
+    public static void CdPlay(CdPlayer cdPlayer){
+        cdPlayer.setButtonPushed("Play button pushed from the interceptor \n");
+    }
+
+    public static void CdStop(CdPlayer cdPlayer){
+        cdPlayer.setButtonPushed("Stop button pushed");
+    }
+
+
+
 }
