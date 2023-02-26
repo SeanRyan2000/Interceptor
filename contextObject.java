@@ -1,4 +1,4 @@
-public class contextObject {
+public class ContextObject {
     static String trackId;
 
     public static String setTrackId() {
@@ -19,13 +19,23 @@ public class contextObject {
         return trackId;
     }
 
+    public static String setTrackId(Boolean userTrackId) {
+        if(userTrackId) {
+            trackId = "Taylor Swift";
+        }
+        return trackId;
+    }
+
     public static String getTrackId() {
-        // System.out.println(trackId);
         return trackId;
     }
 
     public static void playSong() {
         System.out.println(setTrackId() + " is playing\n");
+    }
+
+    public static void playSong(Boolean userTrackId) {
+        System.out.println(setTrackId(true) + " is playing\n");
     }
 
     public static void stopSong() {
