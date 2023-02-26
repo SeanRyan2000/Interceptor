@@ -34,6 +34,6 @@ public class CdPlayer implements IPushCallBack {
     // interception point
     public final void stopButtonPushed(Button b){
         dispatcher.dispatchStop(this);
-        System.out.println("Stop button pushed \n");
+        // System.out.println("Stop button pushed \n");
     }
 }
