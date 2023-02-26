@@ -20,15 +20,15 @@ public class contextObject {
     }
 
     public static String getTrackId() {
-        System.out.println(trackId);
+        // System.out.println(trackId);
         return trackId;
     }
 
     public static void playSong() {
-        System.out.println(setTrackId() + " is playing");
+        System.out.println(setTrackId() + " is playing\n");
     }
 
     public static void stopSong() {
-        System.out.println(getTrackId() + " is stopped");
+        System.out.println(getTrackId() + " is stopped\n");
     }
 }

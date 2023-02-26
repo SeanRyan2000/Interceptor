@@ -27,13 +27,15 @@ public class CdPlayer implements IPushCallBack {
 
     // interception point
     public final void playButtonPushed(Button b){
+        System.out.println("Play Button Pushed");
         dispatcher.dispatchPlay(this);
-        System.out.println(buttonPushed);
+
     }
 
     // interception point
     public final void stopButtonPushed(Button b){
+        System.out.println("Stop button pushed");
         dispatcher.dispatchStop(this);
-        // System.out.println("Stop button pushed \n");
+
     }
 }

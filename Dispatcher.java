@@ -14,8 +14,9 @@ public class Dispatcher {
 
     public void dispatchStop(CdPlayer cdPlayer){
         register("dispatchStop", time);
-        iterate_list();
         ConcreteInterceptor.CdStop(cdPlayer);
+
+        iterate_list();
     }
 
     public void register(String command, Date time){
